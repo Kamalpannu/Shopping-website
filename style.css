@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Lato:wght@400;700&family=Nova+Square&display=swap');
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color:lightgrey;
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Nova Square', sans-serif;
+    margin: 0;
+    color: darkslategray;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 20px;
+    padding: 10px;
+}
+
+ul a {
+    text-decoration: none;
+    color: darkslategray;
+    font-weight: bold;
+}
+
+article {
+    padding: 20px;
+}
+
+section {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.Designs {
+    float: right;
+    margin-top: 20px;
+}
+
+.Designs img {
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+img:hover{
+    transform:scale(1.05,1.05);
+}
+img{
+    transition:transform 0.5s;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    ul {
+        display:flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    ul li {
+        margin: 10px 0; 
+        padding: 10px;
+        text-align: center; 
+    }
+
+    article {
+        padding: 10px;
+    }
+
+    .Designs {
+        float: none;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .Designs img {
+        margin: 10px;
+        max-width: 100%; 
+    }
+
+    img:hover {
+        transform: none; 
+    }
+}
+
+
+
